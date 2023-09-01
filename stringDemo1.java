@@ -28,11 +28,11 @@ public class stringDemo1 {
 		String strObj = new String("Hello!");
 		String str = "Hello!";
 		
-		// The two string references point two strings that are equal
+		// the "strObj" refer to obj in heap and "str" refer to str literal in pool
 		if (strObj.equals(str)) {
 		 System.out.println("The strings are equal");
 		}
-		// The two string references do not point to the same object
+		// The two string attributes do not refer to same object 
 		if (strObj != str) {
 		 System.out.println("The strings are not the same object");
 		}
@@ -49,7 +49,7 @@ public class stringDemo1 {
 		 System.out.println(str1.contains(str2)); //prints true
 		 System.out.println(str1.contains(str3)); //prints false
 		 
-		 int j=str1.indexOf("l");//gives th e first occurenceof l//you can give char or string as input
+		 int j=str1.indexOf("l");//gives the first occurenceof l//you can give char or string as input
 		 System.out.println(j);
 		 
 	}
